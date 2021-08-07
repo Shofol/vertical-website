@@ -1,0 +1,15 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6rem 6rem 0 0;
+  background: left top / cover no-repeat url("/bg-footer.png"),
+    center / cover repeat url("/pattern-bg@2x.png"), #2f81ff;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    border-radius: 4rem 4rem 0 0;
+    background: left top / 200vw no-repeat url("/bg-footer.png"),
+      center / cover repeat url("/pattern-bg@2x.png"), #2f81ff;
+  }
+}

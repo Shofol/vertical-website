@@ -1,0 +1,40 @@
+.hero {
+  background: bottom / cover no-repeat url("/hero-pattern.svg"),
+    center / cover repeat url("/pattern-bg@2x.png"),
+    center/ cover url("/bg.png");
+}
+
+.mobileNav {
+  background: 3% 125px / cover no-repeat url("/hero-pattern.svg"),
+    center / cover repeat url("/pattern-bg@2x.png"),
+    center/ cover url("/bg.png");
+}
+
+.user2Bg::before {
+  background: center / cover url("../../public/user.jpg");
+}
+
+.processBg {
+  width: 100%;
+  background: bottom / contain no-repeat url("/process-pattern.svg"),
+    center / cover repeat url("/pattern-bg@2x.png"), #cbe8e5;
+  margin-top: 12rem;
+}
+
+.whyBg {
+  width: 100%;
+  background: center / cover repeat url("/pattern-bg@2x.png"), #cbe8e5;
+}
+
+@media screen and (max-width: 768px) {
+  .processBg {
+    margin-top: 65rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .processBg {
+    background: 0% 124%/ 80rem no-repeat url(/process-pattern.svg),
+      center / cover repeat url(/pattern-bg@2x.png), #cbe8e5;
+  }
+}

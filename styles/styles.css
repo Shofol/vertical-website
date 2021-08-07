@@ -1,0 +1,141 @@
+/* .text-regular {
+  font-family: "DM Sans Regular";
+  color: #71a1a4;
+  @apply text-opacity-100 tracking-normal;
+}
+
+.text-bold {
+  font-family: "DM Sans Bold";
+  color: #71a1a4;
+  @apply text-opacity-100 tracking-normal;
+} */
+
+button,
+a {
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.8;
+}
+
+.userImgPolygon {
+  -webkit-mask-image: url("/hexagon.svg");
+  mask-image: url("/hexagon.svg");
+  mask-repeat: no-repeat;
+}
+
+.userImgPolygonOutline {
+  -webkit-mask-image: url("/hexagonOutline.svg");
+  mask-image: url("/hexagonOutline.svg");
+  mask-repeat: no-repeat;
+  background: #2f81ff;
+  position: absolute;
+  content: "";
+  padding: 1rem;
+  border-radius: 35px;
+  width: 85%;
+  height: 85%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}
+
+.description-poly {
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.img-polygon:hover .description-poly {
+  opacity: 1;
+}
+
+.img-rect {
+  width: 10rem;
+  height: 10rem;
+  background: white;
+  border-radius: 35px;
+  position: relative;
+}
+
+.img-rect::before {
+  position: absolute;
+  content: "";
+  padding: 1rem;
+  border: 1px solid #2f81ff;
+  border-radius: 35px;
+  width: 85%;
+  height: 85%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}
+
+.rect-border {
+  position: absolute;
+  padding: 1rem;
+  border: 1px solid #2f81ff;
+  border-radius: 16px;
+  width: 85%;
+  height: 85%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}
+
+.description {
+  border-radius: 35px;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.img-rect:hover .description {
+  opacity: 1;
+}
+
+.icon-circle::before {
+  position: absolute;
+  content: "";
+  padding: 1rem;
+  border: 1px solid #2f81ff;
+  border-radius: 50%;
+  width: 85%;
+  height: 85%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+}
+
+.description-circle {
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.icon-circle:hover .description-circle {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .img-polygon {
+    width: 5.3rem;
+    height: 5.3rem;
+  }
+
+  .img-rect {
+    width: 5.3rem;
+    height: 5.3rem;
+    border-radius: 25px;
+  }
+
+  .img-rect::before {
+    border-radius: 25px;
+  }
+
+  /* .logo {
+    width: 100px !important;
+    height: 20px !important;
+  } */
+}

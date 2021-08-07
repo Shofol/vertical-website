@@ -1,0 +1,120 @@
+.header {
+  background: right / contain no-repeat url("/hero-cornerstone.svg"),
+    center / cover repeat url("/pattern-bg@2x.png"),
+    center/ cover url("/bg.png");
+  min-height: 28rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5rem;
+  margin-top: -7rem;
+  padding-top: 10rem;
+}
+
+.blogHeader {
+  background: right / contain no-repeat url("/illu-hero-blog.svg"),
+    center / cover repeat url("/pattern-bg@2x.png"), #cbe8e5;
+  min-height: 28rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5rem;
+  margin-top: -7rem;
+  padding-top: 10rem;
+}
+
+.content {
+  color: #71a1a4;
+}
+
+.content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  max-width: 36rem;
+}
+
+.content h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.content h4 {
+  /* color: #2f81ff; */
+  font-weight: bold;
+  font-size: 1.25rem;
+  /* margin-top: 2rem; */
+  /* margin-bottom: 1.25rem; */
+}
+
+.content a {
+  color: #2f81ff;
+  font-weight: bold;
+}
+
+.content ol {
+  padding-left: 4rem;
+  margin-top: 2rem;
+}
+
+.content ul {
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.content ol li {
+  margin-top: 2rem;
+}
+
+.content ::marker {
+  color: #2f81ff !important;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.tableOfContent {
+  padding: 0 !important;
+  margin: 1rem 0 !important;
+}
+
+.tableOfContent a {
+  color: #71a1a4 !important;
+  font-weight: lighter;
+  /* transition: font-weight 0.25s; */
+}
+.tableOfContent a:hover {
+  font-weight: 600;
+}
+
+.breadCrumb {
+  max-width: 287px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden !important;
+}
+
+@media screen and (max-width: 768px) {
+  .content ol {
+    padding-left: 1rem;
+  }
+
+  .content h1 {
+    font-size: 35px;
+  }
+
+  .header {
+    background: center / cover repeat url("/pattern-bg@2x.png"),
+      center/ cover url("/bg.png");
+    padding: 1.255rem;
+    min-height: 28rem;
+  }
+
+  .header h1 {
+    margin-top: 8rem;
+  }
+
+  .blogHeader {
+    background: center / cover repeat url("/pattern-bg@2x.png"), #cbe8e5;
+    min-height: 28rem;
+    padding: 1.255rem;
+  }
+}
