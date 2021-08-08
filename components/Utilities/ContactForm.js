@@ -149,7 +149,8 @@ const ContactForm = ({ showModalConfig, toggleModalConfig }) => {
         <>
             {showModal &&
                 <div ref={targetRef} className="fixed inset-0 bg-gray-200 bg-opacity-70 flex items-center justify-center h-screen z-50">
-                    <div className="z-70 relative bg-white px-12 sm:px-20 md:px-24 py-4 mx-2 lg:mx-0 w-full lg:w-5/12 h-auto lg:h-92vh overflow-y-auto rounded-md">
+                    {/* lg:h-92vh */}
+                    <div className="z-70 relative bg-white px-12 sm:px-20 md:px-24 py-4 mx-2 lg:mx-0 w-full lg:w-5/12 h-auto max-h-92vh max-w-3xl overflow-y-auto rounded-md">
                         {!submittied && <><button className="text-xs font-semibold absolute top-4 right-4" onClick={() => handleClose()}>Close</button>
                             <p className="font-bold text-2xl text-center mt-8">
                                 <span className="hidden lg:block">

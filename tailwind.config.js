@@ -13,7 +13,8 @@ module.exports = {
         "vert-green-dark": "#346B6E"
       },
       maxHeight: {
-        '90': '90%'
+        '90': '90%',
+        '92vh': '92vh'
       },
       fontFamily: {
         dmsans: "DM Sans Regular",
@@ -25,7 +26,6 @@ module.exports = {
         '160': '40rem',
         '68': '34rem',
         '112': '28rem',
-        '92vh': '92vh'
       },
       width: {
         '160': '40rem',
