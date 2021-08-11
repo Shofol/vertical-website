@@ -1,12 +1,10 @@
 import React from 'react'
-import Image from 'next/image'
 
 const Mission = ({ mission }) => {
-    console.log(`https:${mission.fields.image.fields.file.url}`)
     return (
         <div className="bg-vert-green-lighter p-8 rounded-3xl">
-            <Image
-                src={`https://${mission.fields.image.fields.file.url}`}
+            <img
+                src={`https:${mission.fields.image.fields.file.url}`}
                 alt={mission.fields.image.fields.title}
                 width={142}
                 height={94} />
