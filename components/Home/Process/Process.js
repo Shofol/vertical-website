@@ -52,7 +52,7 @@ const Process = () => {
                             )
                         }
                     </div>
-                    <h2 className="text-4xl text-vert-green font-bold mb-8 mt-32">Audit your <br className="lg:hidden" /> Health  Tech software <br /> for security and compliance</h2>
+                    <h2 className="text-4xl text-vert-green-dark font-bold mb-8 mt-32">Audit your <br className="lg:hidden" /> Health  Tech software <br /> for security and compliance</h2>
                     <Contact classes={'bg-vert-blue py-3 px-6 mb-24 lg:mb-36'} text={'Request an audit'} />
                 </div>
             </div>

@@ -11,7 +11,7 @@ const Why = () => {
     return (
         <div>
             <div className={"max-w-screen overflow-x-hidden flex flex-col items-start text-left relative"}>
-                <div className="px-5 w-screen lg:px-20 flex flex-col lg:flex-row justify-center items-start lg:items-center py-24 lg:py-48">
+                <div className="m-auto max-w-7xl px-5 w-screen lg:px-20 flex flex-col lg:flex-row justify-center items-start lg:items-center py-24 lg:py-48">
                     <div className="flex-1">
                         <Headline text={'Why choose uS'} />
                         <SubHeading text={'Integrate the Health, Insurance and Pharma ecosystems'} />
@@ -54,7 +54,7 @@ const Why = () => {
                 </div>
             </div>
             <div className={"flex flex-col lg:flex-row lg:p-20 " + (styles.whyBg)}>
-                <div className="px-4 pt-24 pb-4 lg:p-0">
+                <div className="m-auto mr-0 max-w-xl px-4 pt-24 pb-4 lg:p-0">
                     <Image
                         alt="map"
                         width={589}
@@ -63,13 +63,13 @@ const Why = () => {
                         className="flex-1"
                     />
                 </div>
-                <div className="flex-1 pt-12 px-4 pb-24 lg:p-12">
+                <div className="m-auto ml-0 max-w-xl flex-1 pt-12 px-4 pb-24 lg:p-12">
                     <SubHeading text="Global scale" />
                     <Paragraph text="With teams located in Asia, Europe and in the United States, our teams work around your needs and are available at the time that suits you." />
                 </div>
             </div>
 
-            <div className="flex flex-col lg:flex-row pt-8 lg:py-32 lg:px-20">
+            <div className="m-auto max-w-7xl flex flex-col lg:flex-row pt-8 lg:py-32 lg:px-20">
                 <div className="flex-1 py-12 px-4 lg:p-12">
                     <SubHeading text="Patient-obsessed, <br/> technology neutral" />
                     <Paragraph text="We focus solely on creating the most value for patients and the Health ecosystem. We have no technology preference as long as the technology fits your needs and constraints. <br/><br/> Our experts have already delivered production-level applications with the following Tech Stack components." />

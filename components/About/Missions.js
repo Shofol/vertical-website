@@ -4,7 +4,7 @@ import Mission from './Mission';
 const Missions = ({ missions }) => {
 
     return (
-        <div className="flex flex-col lg:flex-row mx-5 mt-24 lg:mt-0 lg:mx-20 lg:space-x-8">
+        <div className="m-auto max-w-screen-xl flex flex-col lg:flex-row mt-24 lg:mt-0 lg:space-x-8">
             <div className="flex-1 mb-8 lg:mb-0">
                 <h2 className="text-vert-blue text-sm font-bold">Mission</h2>
                 <h3 className="text-vert-green font-bold text-4xl leading-tight">

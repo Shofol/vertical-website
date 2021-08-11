@@ -16,7 +16,7 @@
 
 .processBg {
   width: 100%;
-  background: bottom / contain no-repeat url("/process-pattern.svg"),
+  background: bottom / cover no-repeat url("/process-pattern.svg"),
     center / cover repeat url("/pattern-bg@2x.png"), #cbe8e5;
   margin-top: 12rem;
 }

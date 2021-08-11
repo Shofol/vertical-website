@@ -11,11 +11,11 @@ const Footer = () => {
             <div className="flex w-full justify-center items-center mt-8">
                 <Contact classes="bg-white text-vert-blue mx-auto px-12 py-4" />
             </div>
-            <div className="flex flex-col lg:flex-row mt-24 mb-12">
-                <div className="flex-1 lg:ml-24">
+            <div className="flex flex-col lg:flex-row justify-center mt-24 mb-12">
+                <div className="max-w-xs mr-lg flex-1 lg:ml-24">
                     <Image src="/logo.svg" width="158px" height="30px" alt="vertical logo" />
                 </div>
-                <div className="flex-2 flex flex-col lg:flex-row justify-between text-white">
+                <div className="max-w-screen-md flex-2 flex flex-col lg:flex-row justify-between text-white">
                     <div className="flex flex-col">
                         <div className="mt-8 lg:mt-0 flex items-center">
                             <span className="w-5 h-px bg-white mr-2"></span>

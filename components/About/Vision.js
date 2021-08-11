@@ -16,7 +16,7 @@ const Vision = ({ visions }) => {
 
     return (
         <div className="flex flex-col lg:flex-row mx-5 mt-12 lg:mx-20 lg:mt-32">
-            <div className="flex-1 lg:pr-10 lg:py-32">
+            <div className="m-auto max-w-xl flex-1 lg:pr-10 lg:py-32">
                 <h2 className="text-vert-blue text-sm font-bold">Vision</h2>
                 <h3 className="text-vert-green font-bold text-4xl leading-tight">Our Company Vision</h3>
                 <p className="text-vert-green font text-xl mt-8 mb-12">We are a global team dedicated to helping health tech companies globalise and address global challenges.</p>
@@ -38,7 +38,7 @@ const Vision = ({ visions }) => {
                 }
 
             </div>
-            <div className="flex-1 hidden lg:block">
+            <div className="m-auto max-w-5xl ax-w-xl flex-1 hidden lg:block">
                 <div className={"lg:ml-16 px-16 py-40 xl:py-44 h-full " + styles.vision}>
                     <div className="relative h-full">
                         {
@@ -49,7 +49,7 @@ const Vision = ({ visions }) => {
                                 </div>
                             })
                         }
-                        <div className="flex absolute bottom-0 left-0">
+                        <div className="flex absolute bottom-3 left-0">
                             <button className="bg-vert-blue p-3 rounded-lg flex items-center mr-2" onClick={() => handlePrev()}>
                                 <Image src="/left.svg" width={14} height={14} alt="left icon" />
                             </button>

@@ -12,7 +12,7 @@
 }
 
 .vision {
-  background: bottom / contain no-repeat url("/shape-company.svg"),
+  background: bottom / cover no-repeat url("/shape-company.svg"),
     center / cover repeat url("/pattern-bg@2x.png"), #cbe8e5;
 }
 
