@@ -6,8 +6,12 @@ const Team = ({ members }) => {
     const [selectedRow, setSelectedRow] = useState(null);
     const [splittedArray, setSplittedArray] = useState([]);
     const [showShortDescription, setShowShortDescription] = useState(true);
+    const [screenSize, setScreenSize] = useState(0);
 
     useEffect(() => {
+        window.addEventListener('resize', () => {
+            setScreenSize(window.innerWidth);
+        });
         let tempMemebers = [];
         let splitCount = 1;
         if (window.innerWidth > 768 && window.innerWidth <= 1280) {
@@ -21,7 +25,7 @@ const Team = ({ members }) => {
             tempMemebers = [...tempMemebers, members.slice(i, i + splitCount)];
         }
         setSplittedArray(tempMemebers);
-    }, [members])
+    }, [members, screenSize]);
 
     const checkActive = (member) => {
         if (selectedMember === null) {
@@ -40,23 +44,18 @@ const Team = ({ members }) => {
             case 2:
                 src = '/team-2.svg'
                 break;
-
             case 3:
                 src = '/team-3.svg'
                 break;
-
             case 4:
                 src = '/team-4.svg'
                 break;
-
             case 5:
                 src = '/team-1.svg'
                 break;
-
             case 0:
                 src = '/team-1.svg'
                 break;
-
             default:
                 break;
         }
@@ -137,7 +136,7 @@ const Team = ({ members }) => {
 
     return (
         <div className="bg-vert-green-lighter py-12 lg:py-32 px-5 lg:px-20">
-            <h1 className="text-4xl text-vert-green font-bold text-center mb-8">Our Team</h1>
+            <h1 className="p-10 text-4xl text-vert-green font-bold text-center mb-8">Our Team</h1>
             {
                 splittedArray.map(
                     (memberArray, index) => {
@@ -166,7 +165,7 @@ const Team = ({ members }) => {
                                 }
                             </div>
                             <div id="desc" className={'transition-opacity duration-400 ' + (selectedRow === index ? 'opacity-1 my-8' : 'opacity-0 h-0')}>
-                                <div className="flex flex-col md:flex-row items-start">
+                                <div className="m-auto max-w-screen-xl flex flex-col md:flex-row items-start">
                                     <div className="md:pr-12 order-2 md:order-1">
                                         <div className="w-full h-px bg-vert-green-lightest"></div>
                                         <div className="my-8 md:my-20">

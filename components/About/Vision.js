@@ -15,7 +15,7 @@ const Vision = ({ visions }) => {
     }
 
     return (
-        <div className="flex flex-col lg:flex-row mx-5 mt-12 lg:mx-20 lg:mt-32">
+        <div className="px-12 flex flex-col lg:flex-row mx-5 mt-12 lg:mx-20 lg:mt-32">
             <div className="m-auto max-w-xl flex-1 lg:pr-10 lg:py-32">
                 <h2 className="text-vert-blue text-sm font-bold">Vision</h2>
                 <h3 className="text-vert-green font-bold text-4xl leading-tight">Our Company Vision</h3>
@@ -38,8 +38,8 @@ const Vision = ({ visions }) => {
                 }
 
             </div>
-            <div className="m-auto max-w-5xl ax-w-xl flex-1 hidden lg:block">
-                <div className={"lg:ml-16 px-16 py-40 xl:py-44 h-full " + styles.vision}>
+            <div className="m-auto my-0 max-w-5xl flex-1 hidden lg:block">
+                <div className={"lg:ml-16 px-16 py-20 xl:py-44 h-full " + styles.vision}>
                     <div className="relative h-full">
                         {
                             visions.map((vision, index) => {
@@ -58,7 +58,6 @@ const Vision = ({ visions }) => {
                             </button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
