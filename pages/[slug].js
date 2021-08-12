@@ -41,7 +41,7 @@ export default function Cornerstone({ content }) {
                 <div className={styles.header}>
                     <h1>{content.fields.title}</h1>
                 </div>
-                <div className="flex flex-col lg:flex-row">
+                <div className="m-auto max-w-screen-xl flex flex-col lg:flex-row">
                     <div className="flex-1 sticky top-0 z-10 bg-white">
                         <div className="bg-vert-green-lighter mx-5 mt-14 mb-4 lg:mt-20 lg:mx-20 lg:mb-8 px-6 p-4 lg:p-8 rounded-3xl">
                             <div className="flex items-center">
