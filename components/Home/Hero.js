@@ -1,12 +1,12 @@
 import styles from './Home.module.css';
 import useCoverBg from '../../hooks/useCoverBg'
 
-const Hero = () => {
+const Hero = ({ home }) => {
 
-  const user1Bg = useCoverBg('/user.jpg')
-  const user2Bg = useCoverBg('/user.jpg')
-  const user3Bg = useCoverBg('/user.jpg')
-
+  const user1Bg = useCoverBg(home[0].fields.picture1.fields.file.url)
+  const user2Bg = useCoverBg(home[1].fields.picture1.fields.file.url)
+  const user3Bg = useCoverBg(home[2].fields.picture1.fields.file.url)
+  
   return (
     <div className={"-mt-28 pb-80 lg:pb-40 " + (styles.hero)}>
       <div className="m-auto max-w-screen-lg text-4xl lg:text-7xl pt-32 lg:pt-40">

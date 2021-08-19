@@ -1,8 +1,8 @@
 import useCoverBg from '../../hooks/useCoverBg'
 
-const Testimonial = ({ text, employeeName, companyName, companyLink, post, index }) => {
+const Testimonial = ({ text, employeeName, companyName, companyLink, post, index, picture }) => {
 
-    const user1Bg = useCoverBg('/user.jpg')
+    const user1Bg = useCoverBg(picture)
 
     return (
         <div className="bg-white rounded-xl relative p-8">

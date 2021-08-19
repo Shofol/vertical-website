@@ -10,7 +10,6 @@ import BlogCard from '../../../components/BlogCard';
 import Meta from '../../../components/Utilities/Meta';
 
 
-
 const client = createClient({
     space: process.env.CONTENTFUL_SPACE_ID,
     environment: 'master',
