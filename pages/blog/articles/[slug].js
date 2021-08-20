@@ -76,7 +76,7 @@ export default function Article({ contents, content }) {
                 <div className={styles.blogHeader}>
                     <h1>{content.fields.title}</h1>
                 </div>
-                <div className="flex flex-col lg:flex-row">
+                <div className="flex flex-col lg:flex-row max-w-screen-xl m-auto">
                     <div className="flex-1 sticky top-0 z-10 bg-white">
                         <p className={"text-vert-blue mt-14 lg:mt-20 mb-5 mx-5 lg:mx-20 " + (styles.breadCrumb)}>Blog/<strong>{content.fields.title}</strong></p>
 
