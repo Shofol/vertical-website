@@ -114,7 +114,7 @@ export default function Article({ contents, content }) {
                     </div>
 
                 </div>
-                <div className="flex justify-between mx-5 lg:mx-20 mt-16 mb-20 lg:mb-32">
+                <div className="flex justify-between mt-16 mb-20 lg:mb-32 max-w-max m-auto">
                     {prevArticle && <div className="flex items-center lg:items-start">
                         <Link href={prevArticle.fields.slug} passHref >
                             <button className="bg-vert-blue p-4 rounded-xl flex items-center mr-5">

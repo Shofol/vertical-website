@@ -23,9 +23,9 @@ const BlogCard = ({ article }) => {
                 </div>
 
                 <div className="w-full bg-vert-green-light z-20" style={{ height: '2px' }}></div>
-                <div className="flex items-center text-black my-6 text-sm">
+                <div className="flex items-center my-6 text-sm">
                     <p>{article.fields.writer}</p>
-                    <div className="h-1 w-1 rounded-full bg-black mx-2"></div>
+                    <div className="h-1 w-1 rounded-full bg-vert-green-light mx-2"></div>
                     <p>{new Date(article.fields.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                 </div>
             </div>

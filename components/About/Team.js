@@ -155,7 +155,7 @@ const Team = ({ members }) => {
                                                     <p className="text-center text-vert-blue text-xl font-bold mt-5">{member.fields.name}</p>
                                                     <p className="text-center text-vert-green-light mt-2">{member.fields.title}</p>
                                                 </div>
-                                                <button disabled={(selectedMember !== null) && (selectedMember.fields.name !== member.fields.name)} className="z-20 bg-vert-blue p-3 rounded-md flex items-center mr-2 absolute right-3 bottom-5"
+                                                <button disabled={(selectedMember !== null) && (selectedMember.fields.name === member.fields.name)} className="z-20 bg-vert-blue p-3 rounded-md flex items-center mr-2 absolute right-3 bottom-5"
                                                     onClick={() => { handleDescription(member, index) }}>
                                                     <Image src="/plus.svg" width={14} height={14} alt="see member detail" />
                                                 </button>
