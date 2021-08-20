@@ -23,7 +23,7 @@ const Testimonials = ({ home }) => {
                     companyName="Truepill"
                     companyLink="/"
                     index={2}
-                    home={home[4].fields.picture1.fields.file.url}
+                    picture={home[4].fields.picture1.fields.file.url}
                 />
             </div>
         </div>

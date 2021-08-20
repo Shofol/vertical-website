@@ -5,7 +5,7 @@ import Image from 'next/image'
 const BlogCard = ({ article }) => {
 
     return (
-        <div className="rounded-3xl max-w-xs lg:max-w-sm bg-white flex flex-col flex-none ">
+        <div className="rounded-3xl max-w-xs lg:max-w-sm bg-white flex flex-col flex-none mb-6">
             <div className="w-full h-44 relative">
                 <Image
                     src={`https://${article.fields.coverImage.fields.file.url}`}

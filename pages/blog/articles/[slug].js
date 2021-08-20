@@ -141,8 +141,8 @@ export default function Article({ contents, content }) {
 
                 {otherArticles.length > 0 && <> <div className="bg-vert-green-lightest py-12 lg:py-32">
                     <h2 className="text-center">You may also like</h2>
-                    <div className="flex flex-nowrap lg:flex-wrap overflow-auto ">
-                        <div className=" flex flex-nowrap lg:flex-wrap mx-5 lg:mx-20 space-x-4 lg:space-x-11 mt-8">
+                    <div className="flex flex-col items-center">
+                        <div className=" flex flex-col xl:flex-row justify-center xl:space-x-5">
                             {
                                 otherArticles.map(article => {
                                     return <BlogCard article={article} key={article.fields.slug} />
