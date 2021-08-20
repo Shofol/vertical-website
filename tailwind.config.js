@@ -10,7 +10,9 @@ module.exports = {
         "vert-green-lighter": "#ECFAFF",
         "vert-green-lightest": "#C7E6E3",
         "vert-green-medium": "#E7F4F3",
-        "vert-green-dark": "#346B6E"
+        "vert-green-dark": "#346B6E",
+        "#002B56": "#002B56",
+        "#1B6AE3": "#1B6AE3"
       },
       maxHeight: {
         '90': '90%',
