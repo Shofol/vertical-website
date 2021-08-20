@@ -8,9 +8,9 @@ const BlogCard = ({ article }) => {
             <div className="w-full h-44 relative">
                 <img
                     src={`https://${article.fields.coverImage.fields.file.url}`}
-                    alt={'as'}
+                    alt='as'
                     className="rounded-tl-3xl rounded-tr-3xl"
-                    style={{ width: '384px', height: '176px', boxSizing: 'border-box' }}
+                    style={{ width: '384px', height: '176px', objectFit: 'cover', boxSizing: 'border-box' }}
                 />
                 <div className="absolute top-5 left-5 bg-vert-green text-white px-3 py-1 rounded-2xl">Category</div>
             </div>
