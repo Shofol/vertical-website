@@ -13,7 +13,7 @@ const Why = () => {
             <div className={"max-w-screen overflow-x-hidden flex flex-col items-start text-left relative"}>
                 <div className="m-auto max-w-7xl px-5 w-screen lg:px-20 flex flex-col lg:flex-row justify-center items-start lg:items-center py-24 lg:py-48">
                     <div className="flex-1">
-                        <Headline text={'Why choose uS'} />
+                        <Headline text={'Why choose us'} />
                         <SubHeading text={'Integrate the Health, Insurance and Pharma ecosystems'} />
                         <Paragraph text={'Our teams have the experience and expertise to allow your company to focus on value, while we focus on crafting and maintaining this complex but essential data plumbing.'} />
                         <div className="flex mt-8 text-vert-blue items-center">

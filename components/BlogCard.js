@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 // import styles from '../styles/content.module.css';
 
 const BlogCard = ({ article }) => {
@@ -7,7 +6,7 @@ const BlogCard = ({ article }) => {
     return (
         <div className="rounded-3xl max-w-xs lg:max-w-sm bg-white flex flex-col flex-none mb-6">
             <div className="w-full h-44 relative">
-                <Image
+                <img
                     src={`https://${article.fields.coverImage.fields.file.url}`}
                     layout="fill"
                     objectFit="cover"
