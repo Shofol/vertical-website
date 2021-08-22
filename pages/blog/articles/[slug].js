@@ -140,7 +140,7 @@ export default function Article({ contents, content }) {
                 </div>
 
                 {otherArticles.length > 0 && <> <div className="bg-vert-green-lightest py-12 lg:py-32">
-                    <h2 className="text-center">You may also like</h2>
+                    <h2 className="text-center mb-8">You may also like</h2>
                     <div className="flex flex-col items-center">
                         <div className=" flex flex-col xl:flex-row justify-center xl:space-x-5">
                             {
