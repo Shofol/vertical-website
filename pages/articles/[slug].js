@@ -3,11 +3,11 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 import { createClient } from 'contentful';
-import styles from '../../../styles/content.module.css';
-import Share from '../../../components/Utilities/Share'
-import RenderRichText from '../../../components/Utilities/RenderRichText'
-import BlogCard from '../../../components/BlogCard';
-import Meta from '../../../components/Utilities/Meta';
+import styles from '../../styles/content.module.css';
+import Share from '../../components/Utilities/Share'
+import RenderRichText from '../../components/Utilities/RenderRichText'
+import BlogCard from '../../components/BlogCard';
+import Meta from '../../components/Utilities/Meta';
 
 
 const client = createClient({

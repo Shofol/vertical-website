@@ -19,7 +19,7 @@ const BlogCard = ({ article }) => {
                 <div className="pr-6 z-20">
                     <h4 className="mb-6">{article.fields.title}</h4>
                     <p>{`${article.fields.excerpt.substring(0, 100)}...`}</p>
-                    <a href={`/blog/articles/${article.fields.slug}`} passHref className="flex items-center my-6"><div className="w-3 h-px bg-vert-blue mr-2"></div>Read more</a>
+                    <a href={`/articles/${article.fields.slug}`} passHref className="flex items-center my-6"><div className="w-3 h-px bg-vert-blue mr-2"></div>Read more</a>
                 </div>
 
                 <div className="w-full bg-vert-green-light z-20" style={{ height: '2px' }}></div>
