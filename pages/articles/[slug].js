@@ -74,12 +74,11 @@ export default function Article({ contents, content }) {
             <Meta title={content.fields.title} description={content.fields.excerpt} />
             <div className={styles.content} >
                 <div className={styles.blogHeader}>
-                    <h1>{content.fields.title}</h1>
+                   {content.fields.title && <h1>{content.fields.title}</h1>}
                 </div>
                 <div className="flex flex-col lg:flex-row max-w-screen-xl m-auto">
                     <div className="flex-1 sticky top-0 z-10 bg-white">
-                        <p className={"text-vert-blue mt-14 lg:mt-20 mb-5 mx-5 lg:mx-20 " + (styles.breadCrumb)}><strong>{content.fields.title}</strong></p>
-
+                       {content.fields.title && <p className={"text-vert-blue mt-14 lg:mt-20 mb-5 mx-5 lg:mx-20 " + (styles.breadCrumb)}><strong>{content.fields.title}</strong></p>}
                         <div className="bg-vert-green-lighter mx-5 lg:mx-20 mb-4 lg:mb-8 px-6 p-4 lg:p-8 rounded-3xl">
                             <div className="flex items-center">
                                 <Image
@@ -108,11 +107,9 @@ export default function Article({ contents, content }) {
                             <Share links={content.fields.socialLinks} />
                         </div>}
                     </div>
-
                     <div className="flex-2 pt-12 lg:py-20 px-5 lg:pr-20" ref={ref}>
-                        <RenderRichText content={content.fields.blogContent} />
+                        {content.fields.blogContent && <RenderRichText content={content.fields.blogContent} />}
                     </div>
-
                 </div>
                 <div className="flex justify-between mt-16 mb-20 lg:mb-32 max-w-screen-xl m-auto">
                     {prevArticle && <div className="flex items-center lg:items-start">
