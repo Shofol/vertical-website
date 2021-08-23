@@ -78,7 +78,7 @@ export default function Article({ contents, content }) {
                 </div>
                 <div className="flex flex-col lg:flex-row max-w-screen-xl m-auto">
                     <div className="flex-1 sticky top-0 z-10 bg-white">
-                        <p className={"text-vert-blue mt-14 lg:mt-20 mb-5 mx-5 lg:mx-20 " + (styles.breadCrumb)}>Blog/<strong>{content.fields.title}</strong></p>
+                        <p className={"text-vert-blue mt-14 lg:mt-20 mb-5 mx-5 lg:mx-20 " + (styles.breadCrumb)}><strong>{content.fields.title}</strong></p>
 
                         <div className="bg-vert-green-lighter mx-5 lg:mx-20 mb-4 lg:mb-8 px-6 p-4 lg:p-8 rounded-3xl">
                             <div className="flex items-center">
