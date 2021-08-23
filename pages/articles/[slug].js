@@ -104,9 +104,9 @@ export default function Article({ contents, content }) {
                                 })}
                             </ul>}
                         </div>
-                        <div className="hidden lg:block">
+                        {content.fields.socialLinks && <div className="hidden lg:block">
                             <Share links={content.fields.socialLinks} />
-                        </div>
+                        </div>}
                     </div>
 
                     <div className="flex-2 pt-12 lg:py-20 px-5 lg:pr-20" ref={ref}>
@@ -152,9 +152,9 @@ export default function Article({ contents, content }) {
                     </div>
 
                 </div>
-                    <div className="block lg:hidden mt-12">
+                    {content.fields.socialLinks && <div className="block lg:hidden mt-12">
                         <Share links={content.fields.socialLinks} />
-                    </div>
+                    </div>}
                     <div className="hidden lg:block bg-vert-green-lightest h-40 w-full -mb-40"></div></>}
             </div>
         </>
