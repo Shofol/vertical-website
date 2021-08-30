@@ -22,8 +22,6 @@ export const getStaticProps = async ({ params }) => {
 }
 
 export default function Privacy({ privacy }) {
-
-    console.log(privacy);
     return (
         <>
         <div className={styles.content} >
