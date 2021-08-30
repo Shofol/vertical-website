@@ -29,7 +29,7 @@ export default function Privacy({ privacy }) {
                 <h1>{privacy.fields.title}</h1>
             </div>
             <div className="m-auto max-w-screen-xl flex flex-col lg:flex-row">
-                <div className="flex-2 py-12 lg:py-20 px-5 lg:pr-20">
+                <div className="flex-2 py-12 lg:py-20 px-12 lg:pr-20">
                     <RenderRichText content={privacy.fields.content} />
                 </div>
             </div>
