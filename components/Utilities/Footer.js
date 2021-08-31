@@ -33,7 +33,7 @@ const Footer = () => {
                         </div>
                         <div className="mt-8 lg:mt-10 flex items-center">
                             <span className="w-5 h-px bg-white mr-2"></span>
-                            <Link href="/">Legal Disclosure</Link>
+                            <Link href="/legal">Legal Disclosure</Link>
                         </div>
                     </div>
                     <div className="flex flex-col">
