@@ -6,6 +6,10 @@
     center / cover repeat url("/pattern-bg@2x.png"), #2f81ff;
 }
 
+.lightblueShadow {
+  text-shadow: 2px 2px #3f8bff4d;
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     border-radius: 4rem 4rem 0 0;
