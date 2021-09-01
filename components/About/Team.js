@@ -173,16 +173,16 @@ const Team = ({ members }) => {
                                             <p className="text-vert-blue text-4xl font-bold mt-5">{selectedMember?.fields?.name}</p>
                                             <p className="text-vert-green-light text-xl mt-2">{selectedMember?.fields?.title}</p>
                                             {showShortDescription && <p className="text-vert-green mt-8">
-                                                {selectedMember?.fields?.shortDescription.split('\n').map(paragraph =>
-            <p className="py-1">
+                                                {selectedMember?.fields?.shortDescription.split('\n').map((paragraph, i) =>
+            <p key={i} className="py-1">
                 {paragraph}
             </p>
         )}
                                             </p>}
                                             {showShortDescription && <button onClick={() => { setShowShortDescription(false) }} className="text-vert-blue font-bold flex items-center my-6"><div className="w-3 h-px bg-vert-blue mr-2"></div>Read more</button>}
                                             {!showShortDescription && <p className="text-vert-green mt-8">
-                                                {selectedMember?.fields?.description.split('\n').map(paragraph =>
-            <p className="py-1">
+                                                {selectedMember?.fields?.description.split('\n').map((paragraph, i) =>
+            <p key={i} className="py-1">
                 {paragraph}
             </p>
         )}
