@@ -13,7 +13,7 @@ const Testimonial = ({ text, employeeName, companyName, companyLink, post, index
                 </div>
                 <div className="text-vert-green text-sm ml-3">
                     <p>{employeeName}</p>
-                    <p className="text-vert-green-light">{post} at <a className="text-vert-blue font-bold underline" href={companyLink}>{companyName}</a></p>
+                    <p className="text-vert-green-light">{post} at <span className="text-vert-blue font-bold">{companyName}</span></p>
                 </div>
             </div>
         </div>
