@@ -97,8 +97,14 @@ const Navbar = () => {
         {/* Menu items */}
         <div className={showMobileNavbar ? `fixed bottom-0 left-0 right-0 top-16 ${styles.mobileNav}` : 'flex items-center'}>
           <div className={"items-center space-y-12 lg:space-y-0 lg:space-x-12 lg:space-x-0 pt-12 lg:pt-0 " + (showMobileNavbar ? "flex flex-col " : "hidden lg:flex lg:flex-row")}>
-            <div className="text-left pt-1" >
-              <Link href="/gdpr-for-us"  >GDPR for US</Link>
+            <div className="text-left pt-1">
+              <Link href="/gdpr-for-us">GDPR for US</Link>
+            </div>
+            <div className="text-left pt-1">
+              <Link href="/what-is-diga">What is DiGA</Link>
+            </div>
+            <div className="text-left pt-1">
+              <Link href="/compliant-health-tech-app-development">Compliant App Development</Link>
             </div>
             <a target="_blank" rel="noreferrer" href="https://career.vertrical.com/" className="text-left pt-1" >Career</a>
             <Link href="/about" >

@@ -3,9 +3,13 @@ import useCoverBg from '../../hooks/useCoverBg'
 
 const Hero = ({ home }) => {
 
-  const user1Bg = useCoverBg(home[0].fields.picture1.fields.file.url)
-  const user2Bg = useCoverBg(home[1].fields.picture1.fields.file.url)
-  const user3Bg = useCoverBg(home[2].fields.picture1.fields.file.url)
+  const carmen = home.find(x => x.fields.title === 'Carmen Spoida')
+  const omar = home.find(x => x.fields.title === 'Omar Khan')
+  const sid = home.find(x => x.fields.title === 'Sid Viswanathan')
+
+  const user1Bg = useCoverBg(carmen.fields.picture1.fields.file.url)
+  const user2Bg = useCoverBg(omar.fields.picture1.fields.file.url)
+  const user3Bg = useCoverBg(sid.fields.picture1.fields.file.url)
   
   return (
     <div className={"-mt-28 pb-80 lg:pb-40 " + (styles.hero)}>

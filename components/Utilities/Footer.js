@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="flex flex-col">
                         <div className={"mt-8 lg:mt-0 flex items-center " + styles.lightblueShadow}>
                             <span className="w-5 h-px bg-white mr-2"></span>
-                            <Link href="/">GDPR for US Health Tech</Link>
+                            <Link href="/gdpr-for-us">GDPR for US Health Tech</Link>
                         </div>
                         <div className={"mt-8 lg:mt-10 flex items-center " + styles.lightblueShadow}>
                             <span className="w-5 h-px bg-white mr-2"></span>
@@ -31,7 +31,7 @@ const Footer = () => {
                     <div className="flex flex-col">
                         <div className={"mt-8 lg:mt-0 flex items-center " + styles.lightblueShadow}>
                             <span className="w-5 h-px bg-white mr-2"></span>
-                            <Link href="/">What is DiGa?</Link>
+                            <Link href="/what-is-diga">What is DiGa?</Link>
                         </div>
                         <div className={"mt-8 lg:mt-10 flex items-center " + styles.lightblueShadow}>
                             <span className="w-5 h-px bg-white mr-2"></span>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <div className="flex flex-col">
                         <div className={"mt-8 lg:mt-0 flex items-center " + styles.lightblueShadow}>
                             <span className="w-5 h-px bg-white mr-2"></span>
-                            <Link href="/">Complaint Health Tech Development</Link>
+                            <Link href="/compliant-health-tech-app-development">Complaint Health Tech Development</Link>
                         </div>
 
                         <div className={"flex items-center mt-8 lg:mt-10 " + styles.lightblueShadow}>
