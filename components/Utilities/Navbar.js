@@ -106,7 +106,7 @@ const Navbar = () => {
             <div className="text-left pt-1">
               <Link href="/compliant-health-tech-app-development">Compliant App Development</Link>
             </div>
-            <a target="_blank" rel="noreferrer" href="https://careers.vertrical.com/" className="text-left pt-1" >Career</a>
+            <a target="_blank" rel="noreferrer" href="https://career.vertrical.com/" className="text-left pt-1" >Careers</a>
             <Link href="/about" >
               <a className="text-left pt-1" >About Us</a>
             </Link>
