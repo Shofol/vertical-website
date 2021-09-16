@@ -25,9 +25,12 @@ module.exports = {
         'tiny': '.5rem'
       },
       height: {
+        '43rem': '43rem',
         '160': '40rem',
         '68': '34rem',
+        '30rem': '30rem',
         '112': '28rem',
+        '22rem': '22rem'
       },
       width: {
         '160': '40rem',
