@@ -12,10 +12,12 @@ const isEmail = (email = null) => {
     return regex.test(email);
 };
 
+const AWS_IDENTITY_POOL_ID = process.env.AWS_IDENTITY_POOL_ID;
+
 const sendEmail = ({ successHandler, errorHandler, to, from, messageBody, org, phone }) => {
     AWS.config.region = 'eu-west-1';
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-        IdentityPoolId: 'eu-west-1:c60a7788-6d53-4451-b2f0-e0f68f7c082d',
+        IdentityPoolId: AWS_IDENTITY_POOL_ID,
     });
     const ses = new SES({ apiVersion: "2010-12-01" });
     const params = {
