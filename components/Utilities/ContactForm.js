@@ -146,8 +146,8 @@ const ContactForm = ({ showModalConfig, toggleModalConfig }) => {
     return (
         <>
             {showModal &&
-                <div ref={targetRef} className="fixed inset-0 bg-gray-200 bg-opacity-70 flex items-center justify-center h-screen z-60">
-                    <div className="z-70 relative bg-white px-12 sm:px-20 md:px-24 py-4 mx-2 lg:mx-0 w-full lg:w-5/12 lg:h-92vh h-92vh overflow-y-auto rounded-md">
+                <div ref={targetRef} className="fixed inset-0 bg-gray-200 bg-opacity-70 flex items-center justify-center h-screen z-50">
+                    <div className="z-70 relative bg-white px-12 sm:px-20 md:px-24 py-4 mx-2 lg:mx-0 w-full lg:w-5/12 h-auto max-h-92vh max-w-3xl overflow-y-auto rounded-md">
                         {!submittied && <><button className="text-xs font-semibold absolute top-4 right-4" onClick={() => handleClose()}>Close</button>
                             <p className="font-bold text-2xl text-center mt-8">
                                 <span className="hidden lg:block">
@@ -164,7 +164,7 @@ const ContactForm = ({ showModalConfig, toggleModalConfig }) => {
                                     <p className="font-medium text-sm ">CEO at Vertrical</p>
                                     <div className="flex items-center text-sm mt-2">
                                         <img src="/linkedin.png" alt="linkedIn" className="h-6 w-6 mr-2 object-contain"></img>
-                                        <a className="underline" href="https://www.linkedin.com/in/nils-widal/?locale=de_DE" target="_blank" rel="noreferrer">Profile</a>
+                                        <a className="underline" href="https://www.linkedin.com/in/nils-widal/?locale=de_DE" target="_blank">Profile</a>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +205,7 @@ const ContactForm = ({ showModalConfig, toggleModalConfig }) => {
                                 <p className="text-sm mt-1 hidden lg:block">Required fields are marked with an asterisk (*)</p>
                                 <button
                                     onClick={handleContact}
-                                    disabled={submitting} className={"bg-vert-green py-2 mx-auto my-6 text-black font-bold rounded-md lg:rounded-sm hover:bg-vert-green-light active:bg-vert-green-dark focus:outline-none focus:border-0 focus:ring focus:ring-vert-green-light " + (submitting ? 'disabled: opacity-50' : '')} style={{ width: '202px' }}
+                                    disabled={submitting} className={"bg-vert-green py-2 mx-auto my-6 text-white font-bold rounded-md lg:rounded-sm hover:bg-vert-green-light active:bg-vert-green-dark focus:outline-none focus:border-0 focus:ring focus:ring-vert-green-light " + (submitting ? 'disabled: opacity-50' : '')} style={{ width: '202px' }}
                                 >
                                     Contact us
                                 </button>
