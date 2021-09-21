@@ -2,6 +2,17 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'lg2': '1100px',
+        'lg3': '1200px',
+        'xl': '1280px',
+        'xl2': '1350px',
+        'xl3': '1450px',
+        '2xl': '1536px'
+    },
     extend: {
       colors: {
         "vert-green": "#71A1A4",
@@ -25,9 +36,20 @@ module.exports = {
         'tiny': '.5rem'
       },
       height: {
+        '43rem': '43rem',
         '160': '40rem',
+        '38rem': '38rem',
+        '37rem': '37rem',
+        '36rem': '36rem',
+        '35rem': '35rem',
         '68': '34rem',
+        '33rem': '33rem',
+        '32rem': '32rem',
+        '30rem': '30rem',
         '112': '28rem',
+        '26rem': '26rem',
+        '24rem': '24rem',
+        '22rem': '22rem'
       },
       width: {
         '160': '40rem',
