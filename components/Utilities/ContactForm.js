@@ -11,12 +11,12 @@ const isEmail = (email = null) => {
     return regex.test(email);
 };
 
-const AWS_IDENTITY_POOL_ID = process.env.AWS_IDENTITY_POOL_ID;
+// const AWS_IDENTITY_POOL_ID = process.env.AWS_IDENTITY_POOL_ID;
 
 const sendEmail = ({ successHandler, errorHandler, to, from, messageBody, org, phone }) => {
     AWS.config.region = 'eu-west-1';
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-        IdentityPoolId: AWS_IDENTITY_POOL_ID,
+        IdentityPoolId: 'eu-west-1:c60a7788-6d53-4451-b2f0-e0f68f7c082d',
     });
     const ses = new SES({ apiVersion: "2010-12-01" });
     const params = {
@@ -218,7 +218,7 @@ const ContactForm = ({ showModalConfig, toggleModalConfig }) => {
                                     Thanks for your message! <br className="hidden lg:inline" />
                                     We will get back to you shortly
                                 </p>
-                                <button onClick={() => handleClose()} disabled={submitting} className={"bg-vert-green py-2 mx-auto my-6 text-black font-bold rounded-md lg:rounded-sm hover:bg-vert-green-light active:bg-vert-green-dark focus:outline-none focus:border-0 focus:ring focus:ring-vert-green-light " + (submitting ? 'disabled: opacity-50' : '')} style={{ width: '130px' }}>Close</button>
+                                <button onClick={() => handleClose()} disabled={submitting} className={"bg-vert-green py-2 mx-auto my-6 text-white font-bold rounded-md lg:rounded-sm hover:bg-vert-green-light active:bg-vert-green-dark focus:outline-none focus:border-0 focus:ring focus:ring-vert-green-light " + (submitting ? 'disabled: opacity-50' : '')} style={{ width: '130px' }}>Close</button>
                             </div>
                         }
                     </div>
