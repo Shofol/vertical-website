@@ -1,8 +1,5 @@
-import Meta from '../components/Utilities/Meta';
-import Hero from '../components/About/Hero';
 import styles from '../styles/content.module.css';
 import RenderRichText from '../components/Utilities/RenderRichText'
-
 import { createClient } from 'contentful';
 
 const client = createClient({

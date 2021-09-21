@@ -36,6 +36,14 @@ export const CookieFooter = () => {
   const [analytical, setAnalytical] = useState(false)
   const [marketing, setMarketing] = useState(false)
   useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    for (const param of params) {
+      if (param[0] === 'cookie_consent_change' && param[1] === "1") {
+        setCookie('vert_consent_given', "")
+        setCookie('vert_marketing_consent', "")
+        setCookie('vert_analytical_consent', "")
+      }
+    }
     setOpen(!getCookie('vert_consent_given'))
     if (getCookie('vert_analytical_consent') == 'true' && getCookie('vert_consent_given') === 'true') {
       let script1 = document.createElement("script");
