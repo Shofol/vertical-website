@@ -164,7 +164,7 @@ const ContactForm = ({ showModalConfig, toggleModalConfig }) => {
                                     <p className="font-medium text-sm ">CEO at Vertrical</p>
                                     <div className="flex items-center text-sm mt-2">
                                         <img src="/linkedin.png" alt="linkedIn" className="h-6 w-6 mr-2 object-contain"></img>
-                                        <a className="underline" href="https://www.linkedin.com/in/nils-widal/?locale=de_DE" target="_blank">Profile</a>
+                                        <a className="underline" href="https://www.linkedin.com/in/nils-widal/?locale=de_DE" target="_blank" rel="noreferrer">Profile</a>
                                     </div>
                                 </div>
                             </div>
