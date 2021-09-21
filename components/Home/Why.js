@@ -4,7 +4,7 @@ import Paragraph from '../Utilities/Paragraph'
 import SubHeading from '../Utilities/SubHeading'
 import Link from 'next/link'
 import Image from 'next/image'
-import TeamBg from '../../public/team.jpg'
+import TeamBg from '../../public/team.jpeg'
 import styles from './Home.module.css'
 
 const Why = () => {
@@ -59,7 +59,7 @@ const Why = () => {
                         alt="map"
                         width={589}
                         height={233}
-                        src={'/map.svg'}
+                        src={'/map2.svg'}
                         className="flex-1"
                     />
                 </div>
