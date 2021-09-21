@@ -185,7 +185,7 @@ gtag('config', 'AW-527217461');`
               </div>
             </div>
           </div>
-          <p className="text-sm  mb-4 text-green-200 px-4">Read about our <Link href="/privacy"><a className="text-white">Privacy Policy</a></Link>.</p>
+          <p className="text-sm mb-4 text-green-200">Read about our <Link href="/privacy"><a className="text-white">Privacy Policy</a></Link>.</p>
         </div>
       </div>}
       {/* <CookieBanner
