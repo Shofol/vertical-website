@@ -104,7 +104,7 @@ const Navbar = () => {
               <Link href="/what-is-diga">What is DiGA</Link>
             </div>
             <div className="text-left pt-1">
-              <Link href="/compliant-health-tech-app-development">Compliant App Development</Link>
+              <Link href="/compliant-digital-health-app-development">Compliant App Development</Link>
             </div>
             <a target="_blank" rel="noreferrer" href="https://career.vertrical.com/" className="text-left pt-1" >Careers</a>
             <Link href="/about" >
