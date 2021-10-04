@@ -25,7 +25,7 @@ export default function Home({ home }) {
 
   return (
     <>
-      <Meta title="Vertrical" description="We help you deploy scalable & compliant Health Tech. Health Tech product and IT teams rely on Vertrical to deploy tailored microservices and apps that handle sensitive health data." />
+      <Meta title="Vertrical" description="We help you deploy scalable & compliant Digital Health. Digital Health product and IT teams rely on Vertrical to deploy tailored microservices and apps that handle sensitive health data." />
       <main>
         <Hero home={home} />
         <Testimonials home={home} />

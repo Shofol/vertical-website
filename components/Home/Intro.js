@@ -9,8 +9,8 @@ const Intro = () => {
         <div className="mt-24 lg:mt-60 mx-auto flex flex-col items-center text-center max-w-xl ">
             <div className="mb-16 px-5 lg:px-0">
                 <Headline text={'Who we arE'} />
-                <SubHeading text={'Health Tech expertise turns compliance in an unfair advantage'} />
-                <Paragraph text={'Vertrical helps fast growing health tech companies deploy microservices that follow best practices in patient data management. Our customers handle sensitive patient data and comply with regulations like:'} />
+                <SubHeading text={'Digital Health expertise turns compliance in an unfair advantage'} />
+                <Paragraph text={'Vertrical helps fast growing digital health companies deploy microservices that follow best practices in patient data management. Our customers handle sensitive patient data and comply with regulations like:'} />
             </div>
             <div className="grid grid-cols-3 w-full">
                 <div className="flex flex-col items-center">

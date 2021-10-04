@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className={"px-8 lg:px-16 " + styles.footer}>
             <h2 className={"text-4xl font-bold text-white text-center mt-28 " + styles.lightblueShadow}>
-                Audit your Health Tech software <br className="hidden lg:block" />for security and compliance
+                Audit your Digital Health software <br className="hidden lg:block" />for security and compliance
             </h2>
             <div className="flex w-full justify-center items-center mt-8">
                 <Contact classes="bg-white text-vert-blue mx-auto px-12 py-4" />
@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="flex flex-col">
                         <div className={"mt-8 lg:mt-0 flex items-center " + styles.lightblueShadow}>
                             <span className="w-5 h-px bg-white mr-2"></span>
-                            <Link href="/gdpr-for-us">GDPR for US Health Tech</Link>
+                            <Link href="/gdpr-for-us">GDPR for US Digital Health</Link>
                         </div>
                         <div className={"mt-8 lg:mt-10 flex items-center " + styles.lightblueShadow}>
                             <span className="w-5 h-px bg-white mr-2"></span>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <div className="flex flex-col">
                         <div className={"mt-8 lg:mt-0 flex items-center " + styles.lightblueShadow}>
                             <span className="w-5 h-px bg-white mr-2"></span>
-                            <Link href="/compliant-health-tech-app-development">Compliant Health Tech Development</Link>
+                            <Link href="/compliant-digital-health-app-development">Compliant Digital Health Development</Link>
                         </div>
 
                         <div className={"flex items-center mt-8 lg:mt-10 " + styles.lightblueShadow}>
