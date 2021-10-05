@@ -44,7 +44,7 @@ const Hero = ({ home }) => {
               <p className="text-tiny leading-none lg:text-sm font-semibold">@Truepill</p>
             </div>
           </div>
-          <span className="text-vert-green font-bold">Health Tech</span>
+          <span className="text-vert-green font-bold">Digital Health</span>
         </div>
       </div>
     </div>

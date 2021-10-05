@@ -19,7 +19,7 @@ const Vision = ({ visions }) => {
             <div className="m-auto max-w-xl flex-1 lg:pr-10 lg:py-32">
                 <h2 className="text-vert-blue text-sm font-bold">Vision</h2>
                 <h3 className="text-vert-green font-bold text-4xl leading-tight">Our Company Vision</h3>
-                <p className="text-vert-green font text-xl mt-8 mb-12">We are a global team dedicated to helping health tech companies globalise and address global challenges.</p>
+                <p className="text-vert-green font text-xl mt-8 mb-12">We are a global team dedicated to helping digital health companies globalise and address global challenges.</p>
                 {
                     visions.map((vision, index) => {
                         return <div key={vision.fields.title}>

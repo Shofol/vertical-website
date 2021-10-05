@@ -8,7 +8,7 @@ const Testimonials = ({ home }) => {
             {/* -bottom-6 lg:-bottom-36 */}
             <div className="max-w-xl lg:mr-8 order-2 lg:order-1">
                 <Testimonial
-                    text="Scaling up health tech can be a challenge, from logistics and compliance to different architecture norms. With Vertrical’s expertise in software development, staffing, and compliance, we’re able to reach our milestones on deadline and at cost, ultimately providing our customers the seamless healthcare experiences they deserve."
+                    text="Scaling up digital health can be a challenge, from logistics and compliance to different architecture norms. With Vertrical’s expertise in software development, staffing, and compliance, we’re able to reach our milestones on deadline and at cost, ultimately providing our customers the seamless healthcare experiences they deserve."
                     employeeName="Sid Viswanathan"
                     post="Co-Founder & President"
                     companyName="Truepill"

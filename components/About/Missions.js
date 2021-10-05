@@ -8,7 +8,7 @@ const Missions = ({ missions }) => {
             <div className="px-12 flex-1 mb-8 lg:mb-0">
                 <h2 className="text-vert-blue text-sm font-bold sticky top-28">Mission</h2>
                 <h3 className="text-vert-green font-bold text-4xl leading-tight sticky top-32">
-                    Health Tech Should be for the Many not the Few but Regulations &
+                    Digital Health Should be for the Many not the Few but Regulations &
                     Lack of Local Knowledge hold back deployments</h3>
             </div>
             <div className="px-12 flex-1 flex flex-col space-y-8">

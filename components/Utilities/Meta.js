@@ -51,7 +51,7 @@ const Meta = ({ title, keywords, description }) => {
 Meta.defaultProps = {
     title: 'Vertrical',
     keywords: "Health, Tech, microservice, sensitive, software, security",
-    description: "We help you deploy scalable & compliant Health Tech. Health Tech product and IT teams rely on Vertrical to deploy tailored microservices and apps that handle sensitive health data."
+    description: "We help you deploy scalable & compliant Digital Health. Digital Health product and IT teams rely on Vertrical to deploy tailored microservices and apps that handle sensitive health data."
 }
 
 

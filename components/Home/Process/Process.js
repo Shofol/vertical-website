@@ -23,7 +23,7 @@ const Process = () => {
             imgHeight: '178px',
             image: '/illu-audit.svg',
             heading: 'Audit your software',
-            description: 'Our Health Tech experts interview and study your code to understand your technology’s strengths and weaknesses.'
+            description: 'Our Digital Health experts interview and study your code to understand your technology’s strengths and weaknesses.'
         },
         {
             id: 3,
