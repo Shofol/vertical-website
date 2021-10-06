@@ -8,9 +8,9 @@ import { createClient } from 'contentful';
 import Meta from '../components/Utilities/Meta';
 
 const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    environment: 'master',
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+  space: process.env.CONTENTFUL_SPACE_ID,
+  environment: 'master',
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
 export const getStaticProps = async ({ params }) => {
@@ -18,7 +18,7 @@ export const getStaticProps = async ({ params }) => {
     content_type: 'home',
   })
 
-  return { props: { home: res.items }}
+  return { props: { home: res.items } }
 }
 
 export default function Home({ home }) {

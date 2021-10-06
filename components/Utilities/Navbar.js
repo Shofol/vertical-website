@@ -18,21 +18,21 @@ const Navbar = () => {
     };
   };
 
-  const [stickyNavbar, setStickyNavbar] = useState(false);
+  // const [stickyNavbar, setStickyNavbar] = useState(false);
 
-  const handleScroll = debounce(() => {
-    window.scrollY > 0
-      ? setStickyNavbar(true)
-      : setStickyNavbar(false);
-  }, stickyNavbar ? 25 : 10);
+  // const handleScroll = debounce(() => {
+  //   window.scrollY > 0
+  //     ? setStickyNavbar(true)
+  //     : setStickyNavbar(false);
+  // }, stickyNavbar ? 25 : 10);
 
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // });
 
   const [showMobileNavbar, setShowMobileNavbar] = useState(false);
   const [logoWidth, setlogoWidth] = useState(158)
@@ -84,9 +84,9 @@ const Navbar = () => {
   }, [router])
 
 
-
+  // + (stickyNavbar ? '' : 'm-4 lg:m-6')
   return (
-    <nav className={"flex justify-between z-50 px-2 py-3 lg:py-4 lg:px-8 rounded bg-white h-12 lg:h-16 transition-all duration-100 fixed top-0 left-0 right-0 " + (stickyNavbar ? '' : 'm-4 lg:m-6')} ref={targetRef}>
+    <nav className={"flex justify-between z-50 px-2 py-3 lg:py-4 lg:px-8 rounded bg-white h-12 lg:h-16 transition-all duration-100 fixed top-0 left-0 right-0 m-4 lg:m-5"} ref={targetRef}>
       <Link href="/" >
         <a className="flex justify-center items-center">
           <Image className="logo" src="/logo.svg" width={logoWidth} height={logoHeight} alt="vertical logo" />
@@ -97,18 +97,18 @@ const Navbar = () => {
         {/* Menu items */}
         <div className={showMobileNavbar ? `fixed bottom-0 left-0 right-0 top-16 ${styles.mobileNav}` : 'flex items-center'}>
           <div className={"items-center space-y-12 lg:space-y-0 lg:space-x-12 lg:space-x-0 pt-12 lg:pt-0 " + (showMobileNavbar ? "flex flex-col " : "hidden lg:flex lg:flex-row")}>
-            <div className="text-left pt-1">
-              <Link href="/gdpr-for-us">GDPR for US</Link>
+            <div className="text-left pt-1 hover:font-bold transition duration-500">
+              <Link href="/gdpr-for-us" >GDPR for US</Link>
             </div>
-            <div className="text-left pt-1">
-              <Link href="/what-is-diga">What is DiGA</Link>
+            <div className="text-left pt-1 hover:font-bold transition duration-500">
+              <Link href="/what-is-diga" >What is DiGA</Link>
             </div>
-            <div className="text-left pt-1">
-              <Link href="/compliant-digital-health-app-development">Compliant App Development</Link>
+            <div className="text-left pt-1 hover:font-bold transition duration-500">
+              <Link href="/compliant-digital-health-app-development" >Compliant App Development</Link>
             </div>
-            <a target="_blank" rel="noreferrer" href="https://career.vertrical.com/" className="text-left pt-1" >Careers</a>
+            <a target="_blank" rel="noreferrer" href="https://career.vertrical.com/" className="text-left pt-1 hover:font-bold" >Careers</a>
             <Link href="/about" >
-              <a className="text-left pt-1" >About Us</a>
+              <a className="text-left pt-1 hover:font-bold" >About Us</a>
             </Link>
           </div>
           <div className={"lg:ml-12 " + (showMobileNavbar ? "flex justify-center items-center mt-12" : "")}>{<Contact classes={"bg-vert-green " + (showMobileNavbar ? "px-10 py-3" : "")}></Contact>}</div>

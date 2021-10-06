@@ -14,7 +14,7 @@ const Process = () => {
             imgWidth: '160px',
             imgHeight: '178px',
             image: '/illu-start.svg',
-            heading: 'Start with WHY',
+            heading: 'Start with why',
             description: 'We interview you to understand your market and who are you targeting to understand what regulations and constraints apply.'
         },
         {
@@ -37,7 +37,7 @@ const Process = () => {
 
 
     return (
-        <div className="mt-24 lg:mt-60 mx-auto flex flex-col items-center text-center">
+        <div className="mt-24 lg:mt-32 mx-auto flex flex-col items-center text-center">
             <div className="max-w-xl mb-16 px-5 lg:px-0">
                 <Headline text={'How we work'} />
                 <SubHeading text={'From software <br/> leadership to commit'} />
