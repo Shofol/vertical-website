@@ -10,11 +10,11 @@ const Hero = ({ home }) => {
   const user1Bg = useCoverBg(carmen.fields.picture1.fields.file.url)
   const user2Bg = useCoverBg(omar.fields.picture1.fields.file.url)
   const user3Bg = useCoverBg(sid.fields.picture1.fields.file.url)
-  
+
   return (
     <div className={"-mt-28 pb-80 lg:pb-40 " + (styles.hero)}>
-      <div className="m-auto max-w-screen-lg text-4xl lg:text-7xl pt-32 lg:pt-40">
-        <div className="flex flex-wrap items-center justify-center mb-24">
+      <div className="m-auto max-w-screen-lg text-4xl lg:text-7xl pt-32 lg:pt-56">
+        <div className="flex flex-wrap items-center justify-center ">
           <span className="text-vert-green font-bold">We help</span>
           <div className="img-rect mx-10" style={user1Bg}>
             <div className="description px-3 flex flex-col justify-center text-white absolute inset-0 w-full h-full bg-black bg-opacity-75">

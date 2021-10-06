@@ -3,15 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'lg2': '1100px',
-        'lg3': '1200px',
-        'xl': '1280px',
-        'xl2': '1350px',
-        'xl3': '1450px',
-        '2xl': '1536px'
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'lg2': '1100px',
+      'lg3': '1200px',
+      'xl': '1280px',
+      'xl2': '1350px',
+      'xl3': '1450px',
+      '2xl': '1536px'
     },
     extend: {
       colors: {
@@ -49,7 +49,8 @@ module.exports = {
         '112': '28rem',
         '26rem': '26rem',
         '24rem': '24rem',
-        '22rem': '22rem'
+        '22rem': '22rem',
+        '9/10': '90%'
       },
       width: {
         '160': '40rem',
@@ -69,11 +70,18 @@ module.exports = {
       },
       spacing: {
         '260': '65rem'
+      },
+      inset: {
+        '2/5': '40%',
+        '-2/5': '-40%'
       }
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight: ['hover', 'focus'],
+      opacity: ['hover', 'focus']
+    },
   },
   plugins: [],
 };

@@ -8,6 +8,12 @@
 
 .lightblueShadow {
   text-shadow: 2px 2px #3f8bff4d;
+  transition: opacity 0.25s;
+}
+
+.lightblueShadow a:hover {
+  font-weight: bold;
+  opacity: 1 !important;
 }
 
 @media screen and (max-width: 768px) {

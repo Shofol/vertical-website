@@ -8,10 +8,10 @@ import { createClient } from 'contentful';
 import Meta from '../components/Utilities/Meta';
 
 const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    environment: 'master',
-    accessToken: process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN,
-    host: 'preview.contentful.com',
+  space: process.env.CONTENTFUL_SPACE_ID,
+  environment: 'master',
+  accessToken: process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN,
+  host: 'preview.contentful.com',
 });
 
 export const getStaticProps = async ({ params }) => {
@@ -19,7 +19,7 @@ export const getStaticProps = async ({ params }) => {
     content_type: 'home',
   })
 
-  return { props: { home: res.items }}
+  return { props: { home: res.items } }
 }
 
 export default function Home({ home }) {

@@ -10,11 +10,11 @@ import styles from './Home.module.css'
 const Why = () => {
     return (
         <div>
-            <div className={"max-w-screen overflow-x-hidden flex flex-col items-start text-left relative"}>
-                <div className="m-auto max-w-7xl px-5 w-screen lg:px-20 flex flex-col lg:flex-row justify-center items-start lg:items-center py-24 lg:py-48">
+            <div className={"max-w-screen overflow-x-hidden flex flex-col items-start text-left relative overflow-y-hidden"}>
+                <div className="m-auto max-w-7xl px-5 w-screen lg:px-20 flex flex-col lg:flex-row justify-center items-start lg:items-center py-24 lg:py-24">
                     <div className="flex-1">
                         <Headline text={'Why choose us'} />
-                        <SubHeading text={'Integrate the Health, Insurance and Pharma ecosystems'} />
+                        <SubHeading text={'Integrate the Health, <br class="hidden lg:block"/> Insurance and Pharma ecosystems'} />
                         <Paragraph text={'Our teams have the experience and expertise to allow your company to focus on value, while we focus on crafting and maintaining this complex but essential data plumbing.'} />
                         <div className="flex mt-8 text-vert-blue items-center">
                             <p className="bg-vert-blue h-px w-6 mr-2"></p>
@@ -35,18 +35,18 @@ const Why = () => {
                     </div>
 
                 </div>
-                <div className="absolute bottom-0 lg:bottom-10 -right-2/4  -z-10  h-1/3 lg:h-4/5 w-full">
+                <div className="absolute bottom-0 lg:bottom-2 -right-2/5 -z-10  h-1/3 lg:h-9/10 w-full">
                     <Image
-                        alt="team"
+                        alt="teamShapeblue"
                         src={'/pattern-shape-bleu.svg'}
                         layout="fill"
                         objectFit="contain"
                         quality={100}
                     />
                 </div>
-                <div className="absolute bottom-0 w-160 h-80 lg:w-auto lg:h-auto -right-72 lg:right-0 -z-20 flex justify-end">
+                <div className="absolute bottom-0 lg:-bottom-24 w-160 h-80 lg:w-auto lg:h-auto -right-72 lg:right-0 -z-20 flex justify-end">
                     <Image
-                        alt="team"
+                        alt="teamShapebluelight"
                         width={993}
                         height={603}
                         src={'/pattern-ligne-bleu.svg'}
@@ -69,7 +69,7 @@ const Why = () => {
                 </div>
             </div>
 
-            <div className="m-auto max-w-7xl flex flex-col lg:flex-row pt-8 lg:py-32 lg:px-20">
+            <div className="m-auto max-w-7xl flex flex-col lg:flex-row pt-8 lg:py-20 lg:px-20">
                 <div className="flex-1 py-12 px-4 lg:p-12">
                     <SubHeading text="Patient-obsessed, <br/> technology neutral" />
                     <Paragraph text="We focus solely on creating the most value for patients and the Health ecosystem. We have no technology preference as long as the technology fits your needs and constraints. <br/><br/> Our experts have already delivered production-level applications with the following Tech Stack components." />

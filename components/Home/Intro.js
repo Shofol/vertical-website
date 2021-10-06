@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Intro = () => {
     return (
-        <div className="mt-24 lg:mt-60 mx-auto flex flex-col items-center text-center max-w-xl ">
+        <div className="mt-24 lg:mt-32 mx-auto flex flex-col items-center text-center max-w-xl ">
             <div className="mb-16 px-5 lg:px-0">
                 <Headline text={'Who we arE'} />
                 <SubHeading text={'Digital Health expertise turns compliance in an unfair advantage'} />
