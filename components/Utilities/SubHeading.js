@@ -8,7 +8,7 @@ const SubHeading = ({ text }) => {
     }
 
     return (
-        <h2 className="text-4xl font-bold text-vert-green mb-8" dangerouslySetInnerHTML={createMarkup()}></h2>
+        <h2 className="text-4.5xl font-bold text-vert-green mb-8" dangerouslySetInnerHTML={createMarkup()}></h2>
     )
 }
 

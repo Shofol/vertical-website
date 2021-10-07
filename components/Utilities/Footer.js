@@ -7,7 +7,7 @@ import Link from 'next/link'
 const Footer = () => {
     return (
         <footer className={"px-8 lg:px-16 " + styles.footer}>
-            <h2 className={"text-4xl font-bold text-white text-center mt-28 " + styles.lightblueShadow}>
+            <h2 className={"text-4.4xl font-bold text-white text-center mt-28 " + styles.lightblueShadow}>
                 Audit your Digital Health software <br className="hidden lg:block" />for security and compliance
             </h2>
             <div className="flex w-full justify-center items-center mt-8">
