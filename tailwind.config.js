@@ -31,9 +31,13 @@ module.exports = {
       },
       fontFamily: {
         dmsans: "DM Sans Regular",
+        kumbhsans: "Kumbh Sans"
       },
       fontSize: {
-        'tiny': '.5rem'
+        'tiny': '.5rem',
+        '4.5xl': ['2.5rem', {
+          lineHeight: '1.4',
+        }]
       },
       height: {
         '43rem': '43rem',
@@ -69,7 +73,9 @@ module.exports = {
         'fontWeight': 'fontWeight',
       },
       spacing: {
-        '260': '65rem'
+        '260': '65rem',
+        '7.5': '1.875rem',
+        '14.5': '3.75rem'
       },
       inset: {
         '2/5': '40%',

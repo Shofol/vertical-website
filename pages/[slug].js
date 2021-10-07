@@ -8,10 +8,19 @@ import Meta from '../components/Utilities/Meta';
 
 
 export default function Cornerstone({ content }) {
-
+    console.log(content);
     const [headerTexts, setHeaderTexts] = useState([]);
     const [showContents, setShowContents] = useState(true);
-    const ref = useRef(null)
+    const ref = useRef(null);
+
+    const [introContent, setIntroContent] = useState(null);
+
+    useEffect(() => {
+        const filterdContent = content.fields.pageContent.content.filter(ct => ct.nodeType === "embedded-entry-block" && ct.data.target.sys.contentType.sys.id === 'introduction')
+        if (filterdContent.length > 0) {
+            setIntroContent(filterdContent[0].data.target.fields.introduction.content);
+        }
+    }, [content]);
 
 
     useEffect(() => {
@@ -73,6 +82,9 @@ export default function Cornerstone({ content }) {
                     </div>
 
                     <div className="flex-2 py-12 lg:py-20 px-5 lg:pr-20" ref={ref}>
+                        {introContent && <div className="font-kumbhsans text-lg">
+                            <RenderRichText content={{ data: {}, nodeType: 'document', content: introContent }} />
+                        </div>}
                         <RenderRichText content={content.fields.pageContent} />
                     </div>
                     <div className="block lg:hidden">

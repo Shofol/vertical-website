@@ -6,7 +6,6 @@ import Image from 'next/image'
 
 
 const renderOptions = {
-
     renderNode: {
         [BLOCKS.EMBEDDED_ENTRY]: (node, children) => {
             if (node.data.target.sys.contentType.sys.id === "videoEmbed") {
@@ -66,16 +65,20 @@ const renderOptions = {
             </ol>);
         },
         [BLOCKS.UL_LIST]: (node, children) => {
-            return (<ul className="list-disc">
+            return (<ul className="list-disc leading-normal">
                 {children}
             </ul>);
         },
         [BLOCKS.HEADING_2]: (node, children) => {
-            return (<h2 className="mt-16 mb-8" id={node.content[0].value.toLowerCase().split(' ').join('_')}>{children}</h2>)
+            return (<h2 className="mt-14.5 mb-7.5" id={node.content[0].value.toLowerCase().split(' ').join('_')}>{children}</h2>)
         },
         [BLOCKS.HEADING_4]: (node, children) => {
             return (<h4 className="text-vert-blue mt-8 mb-5">{children}</h4>)
         },
+        [BLOCKS.PARAGRAPH]: (node, children) => {
+            return (<p className="leading-relaxed">{children}</p>)
+        },
+
         [INLINES.HYPERLINK]: (node, children) => {
             return (<a href={node.data.uri} target="_blank" rel="noreferrer">{node.content[0].value}</a>)
         },
@@ -99,13 +102,14 @@ const renderOptions = {
     },
     renderText: text => {
         return text.split('\n').reduce((children, textSegment, index) => {
-            return [...children, index > 0 && <br key={index} />, textSegment];
+            return [...children, index > 1 && <div className="mb-5" key={index}></div>, textSegment];
         }, []);
     },
 
 };
 
 const RenderRichText = ({ content }) => {
+    console.log(content);
 
     return (
         <>
