@@ -35,7 +35,7 @@ const renderOptions = {
                     <div >
                         <div className="my-16">
                             <div className={styles.contentImage}>
-                                <Image className="rounded-xl" alt={node.data.target.fields.title} src={`https://${node.data.target.fields.image.fields.file.url}`} layout="fill" objectFit="cover" />
+                                <Image className="rounded-xl" alt={node.data.target.fields.altText} src={`https://${node.data.target.fields.image.fields.file.url}`} layout="fill" objectFit="cover" />
                             </div>
                             <p className="pl-2 text-sm pt-1">{node.data.target.fields.caption}</p>
                         </div>
