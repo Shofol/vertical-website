@@ -109,8 +109,6 @@ const renderOptions = {
 };
 
 const RenderRichText = ({ content }) => {
-    console.log(content);
-
     return (
         <>
             {documentToReactComponents(content, renderOptions)}

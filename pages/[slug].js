@@ -8,7 +8,6 @@ import Meta from '../components/Utilities/Meta';
 
 
 export default function Cornerstone({ content }) {
-    console.log(content);
     const [headerTexts, setHeaderTexts] = useState([]);
     const [showContents, setShowContents] = useState(true);
     const ref = useRef(null);

@@ -23,7 +23,7 @@ const Vision = ({ visions }) => {
                 {
                     visions.map((vision, index) => {
                         return <div key={vision.fields.title}>
-                            <button className="cursor-pointer flex items-start lg:items-center" onClick={() => { console.log('as'); setCurrentVision(index) }}>
+                            <button className="cursor-pointer flex items-start lg:items-center" onClick={() => { setCurrentVision(index) }}>
                                 {index === currentVision &&
                                     <Image src="/shape-underlign-our-company.svg" width={30} height={20} alt="selection mark" />
                                 }
