@@ -23,3 +23,9 @@
       center / cover repeat url("/pattern-bg@2x.png"), #2f81ff;
   }
 }
+
+.contentImage {
+  width: 100%;
+  height: 385px;
+  position: relative;
+}

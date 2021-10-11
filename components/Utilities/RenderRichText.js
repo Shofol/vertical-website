@@ -3,7 +3,7 @@ import React from 'react'
 import { BLOCKS, INLINES } from "@contentful/rich-text-types";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import Image from 'next/image'
-
+import styles from './Utilities.module.css'
 
 const renderOptions = {
     renderNode: {
@@ -30,31 +30,45 @@ const renderOptions = {
             if (node.data.target.sys.contentType.sys.id === "qoutation") {
                 return (<p className="italic">{node.data.target.fields.quotation.content[0].content[0].content[0].value}</p>)
             }
+            if (node.data.target.sys.contentType.sys.id === "contentImage") {
+                return (
+                    <div >
+                        <div className="my-16">
+                            <div className={styles.contentImage}>
+                                <Image className="rounded-xl" alt={node.data.target.fields.title} src={`https://${node.data.target.fields.image.fields.file.url}`} layout="fill" objectFit="cover" />
+                            </div>
+                            <p className="pl-2 text-sm pt-1">{node.data.target.fields.caption}</p>
+                        </div>
+                    </div>)
+            }
             if (node.data.target.sys.contentType.sys.id === "dualImage") {
                 return (
-                    <div className="flex justify-center my-16 space-x-2 lg:space-x-10" >
-                        <div>
-                            <Image
-                                src={`https://${node.data.target.fields.image1.fields.file.url}`}
-                                height={460}
-                                width={385}
-                                alt={node.data.target.fields.image1.fields.description}
-                                className="rounded-3xl"
-                                objectFit="cover"
-                                objectPosition="center"
-                            />
+                    <div className="my-16">
+                        <div className="flex justify-center  space-x-2 lg:space-x-10" >
+                            <div>
+                                <Image
+                                    src={`https://${node.data.target.fields.image1.fields.file.url}`}
+                                    height={460}
+                                    width={385}
+                                    alt={node.data.target.fields.image1.fields.description}
+                                    className="rounded-3xl"
+                                    objectFit="cover"
+                                    objectPosition="center"
+                                />
+                            </div>
+                            <div>
+                                <Image
+                                    src={`https://${node.data.target.fields.image2.fields.file.url}`}
+                                    height={460}
+                                    width={385}
+                                    alt={node.data.target.fields.image2.fields.description}
+                                    className="rounded-3xl"
+                                    objectFit="cover"
+                                    objectPosition="center"
+                                />
+                            </div>
                         </div>
-                        <div>
-                            <Image
-                                src={`https://${node.data.target.fields.image2.fields.file.url}`}
-                                height={460}
-                                width={385}
-                                alt={node.data.target.fields.image2.fields.description}
-                                className="rounded-3xl"
-                                objectFit="cover"
-                                objectPosition="center"
-                            />
-                        </div>
+                        <p className="pl-2 text-sm pt-1">{node.data.target.fields.caption}</p>
                     </div>
                 );
             }

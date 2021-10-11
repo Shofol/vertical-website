@@ -44,7 +44,7 @@ export default function Cornerstone({ content }) {
 
     return (
         <>
-            <Meta title={content.fields.title} />
+            <Meta title={content.fields.title} description={content.fields.metaDescription} />
             <div className={styles.content} >
                 <div className={styles.header}>
                     <h1>{content.fields.title}</h1>
