@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from '../Home/Home.module.css'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { useRouter } from 'next/router'
+import AnimatedContactButton from './AnimatedContactButton'
 
 const Navbar = () => {
 
@@ -111,7 +112,9 @@ const Navbar = () => {
               <a className="text-left pt-1 hover:font-bold" >About Us</a>
             </Link>
           </div>
-          <div className={"lg:ml-12 " + (showMobileNavbar ? "flex justify-center items-center mt-12" : "")}>{<Contact classes={"bg-vert-green " + (showMobileNavbar ? "px-10 py-3" : "")}></Contact>}</div>
+          <div className={"lg:ml-12 " + (showMobileNavbar ? "flex justify-center items-center mt-12" : "")}>{<AnimatedContactButton />
+          }</div>
+          {/* <Contact classes={"bg-vert-green " + (showMobileNavbar ? "px-10 py-3" : "")}></Contact> */}
         </div>
         <button className="ml-4 flex lg:hidden items-center" onClick={() => setShowMobileNavbar(!showMobileNavbar)}>
           {!showMobileNavbar && <Image src="/burger.svg" width="32px" height="14px" alt="show mobile menu" />}
