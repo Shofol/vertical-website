@@ -13,7 +13,7 @@ const Hero = ({ home }) => {
 
   return (
     <div className={"-mt-28 pb-80 lg:pb-40 " + (styles.hero)}>
-      <div className="m-auto max-w-screen-lg text-4xl lg:text-7xl pt-32 lg:pt-56">
+      <div className="m-auto max-w-screen-lg text-4xl lg:text-6xl pt-32 lg:pt-56">
         <div className="flex flex-wrap items-center justify-center ">
           <span className="text-vert-green font-bold">We help</span>
           <div className="img-rect mx-10" style={user1Bg}>
@@ -23,10 +23,10 @@ const Hero = ({ home }) => {
               <p className="text-tiny leading-none lg:text-sm font-semibold">@Vertrical</p>
             </div>
           </div>
-          <span className="mr-2 lg:mr-4 my-4 lg:my-0 text-vert-green font-bold">you craft</span>
+          <span className="mr-2 lg:mr-4 my-4 lg:my-0 text-vert-green font-bold">Digital Health</span>
 
-          <span className="my-4 lg:my-0 text-vert-green font-bold">scalable </span>
-          <span className="mr-4 lg:mr-0 text-vert-green font-bold">&nbsp;& compliant</span>
+          <span className="my-4 lg:my-0 text-vert-green font-bold">companies craft  </span>
+          <span className="mr-4 lg:mr-0 text-vert-green font-bold">&nbsp;scalable</span>
           <div className="userImgPolygon w-44 h-44  lg:ml-10 relative img-polygon" style={user2Bg}>
             <div className="userImgPolygonOutline"></div>
             <div className="description-poly px-5 flex flex-col justify-center items-center text-white absolute inset-0 w-full h-full bg-black bg-opacity-75">
@@ -44,7 +44,9 @@ const Hero = ({ home }) => {
               <p className="text-tiny leading-none lg:text-sm font-semibold">@Truepill</p>
             </div>
           </div>
-          <span className="text-vert-green font-bold">Digital Health</span>
+          <span className="text-vert-green font-bold">& compliant</span>
+          <span className="mr-4 lg:mr-0 text-vert-green font-bold">&nbsp;software</span>
+
         </div>
       </div>
     </div>

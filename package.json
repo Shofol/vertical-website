@@ -13,6 +13,7 @@
     "aws-sdk": "^2.950.0",
     "body-scroll-lock": "^4.0.0-beta.0",
     "contentful": "^8.4.2",
+    "gsap": "^3.8.0",
     "next": "11.0.1",
     "nprogress": "^0.2.0",
     "react": "17.0.2",
