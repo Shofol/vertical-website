@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Utilities.module.css'
-import Contact from './Contact'
+import AnimatedContactButton from './AnimatedContactButton'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -11,7 +11,9 @@ const Footer = () => {
                 Audit your Digital Health software <br className="hidden lg:block" />for security and compliance
             </h2>
             <div className="flex w-full justify-center items-center mt-8">
-                <Contact classes="bg-white text-vert-blue mx-auto px-12 py-4" />
+                {/* <Contact classes="bg-white text-vert-blue mx-auto px-12 py-4" /> */}
+                <AnimatedContactButton classes="bg-white text-vert-blue mx-auto px-12 py-4" />
+
             </div>
             <div className="flex flex-col lg:flex-row justify-center mt-24 mb-12">
                 <div className="max-w-xs mr-lg flex-1 lg:ml-24">

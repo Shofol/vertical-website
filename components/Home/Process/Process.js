@@ -2,7 +2,7 @@ import React from 'react'
 import Headline from '../../Utilities/Headline'
 import Paragraph from '../../Utilities/Paragraph'
 import SubHeading from '../../Utilities/SubHeading'
-import Contact from '../../Utilities/Contact'
+import AnimatedContactButton from '../../Utilities/AnimatedContactButton'
 import ProcessCard from './ProcessCard'
 import styles from '../Home.module.css'
 
@@ -53,7 +53,10 @@ const Process = () => {
                         }
                     </div>
                     <h2 className="text-4.5xl text-vert-green-dark font-bold mb-8 mt-32">Audit your <br className="lg:hidden" /> Health  Tech software <br /> for security and compliance</h2>
-                    <Contact classes={'bg-vert-blue py-3 px-6 mb-24 lg:mb-36'} text={'Request an audit'} />
+                    <div className="flex justify-center">
+                        <AnimatedContactButton classes={'bg-vert-blue py-3 px-6 mb-24 lg:mb-36'} text={'Request an audit'} />
+
+                    </div>
                 </div>
             </div>
         </div>

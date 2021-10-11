@@ -112,7 +112,7 @@ const Navbar = () => {
               <a className="text-left pt-1 hover:font-bold" >About Us</a>
             </Link>
           </div>
-          <div className={"lg:ml-12 " + (showMobileNavbar ? "flex justify-center items-center mt-12" : "")}>{<AnimatedContactButton />
+          <div className={"lg:ml-12 " + (showMobileNavbar ? "flex justify-center items-center mt-12" : "")}>{<AnimatedContactButton classes={"bg-vert-green " + (showMobileNavbar ? "px-10 py-3" : "")} />
           }</div>
           {/* <Contact classes={"bg-vert-green " + (showMobileNavbar ? "px-10 py-3" : "")}></Contact> */}
         </div>
