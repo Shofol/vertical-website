@@ -93,3 +93,13 @@ body {
   height: 100%;
   /* border-radius: var(--button-border-radius); */
 }
+
+.corners {
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 599px) {
+  .corners {
+    border-radius: 10px;
+  }
+}

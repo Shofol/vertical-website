@@ -87,7 +87,7 @@ const Navbar = () => {
 
   // + (stickyNavbar ? '' : 'm-4 lg:m-6')
   return (
-    <nav className={"flex justify-between z-50 px-2 py-3 lg:py-4 lg:px-8 rounded bg-white h-12 lg:h-16 transition-all duration-100 fixed top-0 left-0 right-0 m-4 lg:m-5"} ref={targetRef}>
+    <nav className={"flex justify-between z-50 px-2 py-3 lg:py-4 lg:px-8 corners bg-white h-12 lg:h-16 transition-all duration-100 fixed top-0 left-0 right-0 m-4 lg:m-5"} ref={targetRef}>
       <Link href="/" >
         <a className="flex justify-center items-center">
           <Image className="logo" src="/logo.svg" width={logoWidth} height={logoHeight} alt="vertical logo" />

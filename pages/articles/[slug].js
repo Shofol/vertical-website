@@ -30,7 +30,7 @@ export default function Article({ contents, content }) {
     const [introContent, setIntroContent] = useState(null);
 
     useEffect(() => {
-        const filterdContent = content.fields.pageContent.content.filter(ct => ct.nodeType === "embedded-entry-block" && ct.data.target.sys.contentType.sys.id === 'introduction')
+        const filterdContent = content.fields.blogContent.content.filter(ct => ct.nodeType === "embedded-entry-block" && ct.data.target.sys.contentType.sys.id === 'introduction')
         if (filterdContent.length > 0) {
             setIntroContent(filterdContent[0].data.target.fields.introduction.content);
         }
@@ -81,7 +81,7 @@ export default function Article({ contents, content }) {
 
     return (
         <>
-            <Meta title={content.fields.title} description={content.fields.excerpt} />
+            <Meta title={content.fields.title} description={content.fields.metaDescription} />
             <div className={styles.content} >
                 <div className={styles.blogHeader}>
                     {content.fields.title && <h1>{content.fields.title}</h1>}
