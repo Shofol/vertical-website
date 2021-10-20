@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Headline from '../Utilities/Headline'
 import Paragraph from '../Utilities/Paragraph'
 import SubHeading from '../Utilities/SubHeading'
@@ -6,8 +6,159 @@ import Link from 'next/link'
 import Image from 'next/image'
 import TeamBg from '../../public/team.jpeg'
 import styles from './Home.module.css'
+import { animated, useTransition } from "react-spring";
+
+
+const CLOUD_NUM = 3;
+const LANG_NUM = 7;
+const SCM_NUM = 3;
+const DEVOPS_NUM = 5;
 
 const Why = () => {
+
+    const [showCloud, setShowCloud] = useState(0);
+    const [showLang, setShowLang] = useState(0);
+    const [showSCM, setSCM] = useState(0);
+    const [showDevOps, setShowDevOps] = useState(0);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setShowCloud(showCloud + 1);
+        }, 3500);
+        setTimeout(() => {
+            setShowLang(showLang + 1);
+        }, 3000);
+        setTimeout(() => {
+            setSCM(showSCM + 1);
+        }, 4500);
+        setTimeout(() => {
+            setShowDevOps(showDevOps + 1);
+        }, 4000);
+    }, [showCloud, showLang, showSCM, showDevOps]);
+
+    const cloudItems = [
+        {
+            image: '/aws.svg',
+            width: 100,
+            height: 64,
+            alt: 'aws'
+        },
+        {
+            image: '/azure.svg',
+            width: 108,
+            height: 31,
+            alt: 'azure'
+        },
+        {
+            image: '/gcp.svg',
+            width: 120,
+            height: 64,
+            alt: 'gcp'
+        }
+    ];
+
+
+    const langItems = [
+        {
+            image: '/tsjs.svg',
+            width: 108,
+            height: 55,
+            alt: 'javascript and typescript'
+        },
+        {
+            image: '/node.svg',
+            width: 108,
+            height: 31,
+            alt: 'nodejs'
+        },
+        {
+            image: '/react.svg',
+            width: 120,
+            height: 64,
+            alt: 'reactjs'
+        },
+        {
+            image: '/python.svg',
+            width: 120,
+            height: 64,
+            alt: 'python'
+        },
+        {
+            image: '/java.svg',
+            width: 108,
+            height: 64,
+            alt: 'java'
+        },
+        {
+            image: '/spring.svg',
+            width: 60,
+            height: 64,
+            alt: 'spring boot'
+        },
+        {
+            image: '/flutter.svg',
+            width: 50,
+            height: 64,
+            alt: 'flutter'
+        }
+    ];
+
+
+    const scmItems = [
+        {
+            image: '/github.svg',
+            width: 100,
+            height: 64,
+            alt: 'github'
+        },
+        {
+            image: '/gitlab.svg',
+            width: 60,
+            height: 31,
+            alt: 'gitlab'
+        },
+        {
+            image: '/circleci.svg',
+            width: 120,
+            height: 64,
+            alt: 'circleci'
+        }
+    ];
+
+    const devOpsItems = [
+        {
+            image: '/docker.svg',
+            width: 120,
+            height: 64,
+            alt: 'docker'
+        },
+        {
+            image: '/terraform.svg',
+            width: 120,
+            height: 64,
+            alt: 'terraform'
+        },
+        {
+            image: '/elk-stack.svg',
+            width: 80,
+            height: 31,
+            alt: 'elk-stack'
+        },
+        {
+            image: '/mongo.svg',
+            width: 120,
+            height: 64,
+            alt: 'mongodb'
+        },
+        {
+            image: '/kafka.svg',
+            width: 120,
+            height: 64,
+            alt: 'kafka'
+        }
+    ];
+
+
     return (
         <div>
             <div className={"max-w-screen overflow-x-hidden flex flex-col items-start text-left relative overflow-y-hidden"}>
@@ -75,48 +226,102 @@ const Why = () => {
                     <Paragraph text="We focus solely on creating the most value for patients and the Health ecosystem. We have no technology preference as long as the technology fits your needs and constraints. <br/><br/> Our experts have already delivered production-level applications with the following Tech Stack components." />
                 </div>
                 <div className="flex-2 mb-20 lg:mb-0 grid grid-cols-2 lg:grid-cols-4">
-                    <div className="ml-10 mb-10 lg:mb-0 flex items-center">
-                        <Image
+                    <div className="mb-10 lg:mb-0 flex justify-center items-center">
+                        {/* <Image
                             alt="azure"
                             width={108}
                             height={31}
                             src={'/azure.svg'}
-                        />
-                        <div className="h-12 w-px bg-vert-green-light ml-10"></div>
+                        /> */}
+
+
+                        {
+                            cloudItems.map((e, i) => <Logo key={i}
+                                logo={e}
+                                show={showCloud % CLOUD_NUM === i}
+                            />)
+                        }
+
+                        <div className="h-12 w-px bg-vert-green-light ml-auto justify-self-end"></div>
                     </div>
-                    <div className="ml-10 mb-10 lg:mb-0 flex items-center">
-                        <Image
+                    <div className="mb-10 lg:mb-0 flex justify-center items-center">
+                        {/* <Image
                             alt="elk-stack"
                             width={109}
                             height={59}
                             src={'/elk-stack.svg'}
-                        />
-                        <div className="h-12 w-px bg-vert-green-light ml-10"></div>
+                        /> */}
+
+                        {
+                            langItems.map((e, i) => <Logo key={i}
+                                logo={e}
+                                show={showLang % LANG_NUM === i}
+                            />)
+                        }
+
+                        <div className="h-12 w-px bg-vert-green-light ml-auto justify-self-end"></div>
 
                     </div>
 
-                    <div className="ml-10 mb-10 lg:mb-0 flex items-center">
-                        <Image
+                    <div className="mb-10 lg:mb-0 flex justify-center items-center">
+
+                        {
+                            scmItems.map((e, i) => <Logo key={i}
+                                logo={e}
+                                show={showSCM % SCM_NUM === i}
+                            />)
+                        }
+
+
+                        {/* <Image
                             alt="typescript javascript"
                             width={108}
                             height={55}
                             src={'/tsjs.svg'}
-                        />
-                        <div className="h-12 w-px bg-vert-green-light ml-10"></div>
+                        /> */}
+                        <div className="h-12 w-px bg-vert-green-light ml-auto justify-self-end"></div>
 
                     </div>
-                    <div className="ml-10 mb-10 lg:mb-0 flex items-center">
-                        <Image
+                    <div className="mb-10 lg:mb-0 flex justify-center items-center">
+                        {
+                            devOpsItems.map((e, i) => <Logo key={i}
+                                logo={e}
+                                show={showDevOps % DEVOPS_NUM === i}
+                            />)
+                        }
+
+                        {/* <Image
                             alt="aws"
                             width={108}
                             height={64}
                             src={'/aws.svg'}
-                        />
+                        /> */}
                     </div>
                 </div >
             </div >
         </div >
     )
+}
+
+function Logo({ show, logo }) {
+    const transitions = useTransition(show, null, {
+        from: { position: "absolute", opacity: 0, transform: "translateY(100%)" },
+        enter: { opacity: 1, transform: "translateY(0%)" },
+        leave: { opacity: 0, transform: "translateY(-100%)" }
+    });
+    return transitions.map(
+        ({ item, key, props }) =>
+            item && (
+                <animated.img
+                    width={logo.width}
+                    height={logo.height}
+                    src={logo.image}
+                    alt={logo.alt}
+                    key={key}
+                    style={props}
+                />
+            )
+    );
 }
 
 export default Why
