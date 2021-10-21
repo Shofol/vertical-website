@@ -90,6 +90,20 @@ const ContactForm = ({ showModalConfig, toggleModalConfig }) => {
     const handleContact = (e) => {
         e.preventDefault();
         // setIsSendDisabled(true);
+        const lead_source = 'Contact Us Web Form';
+        fetch(`https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&oid=00D5f000002adMU&retURL=https://vertrical.com/&first_name=${myName}&/last_name=${myName}&company=${organization}&email=${email}&phone=${phone}&lead_source=${lead_source}&description=${messageBody}`, {
+            method: 'POST',
+            mode: 'no-cors'
+        }).then((res) => {
+            console.log('response here')
+            res.text()
+        }).then((result) => {
+            console.log('result here');
+            console.log(result);
+        }).catch((err) => {
+            console.log('error', error);
+        });
+
         setSubmitting(true);
         if (!email || !myName || !messageBody || !isEmail(email)) {
             setIsError(true);
