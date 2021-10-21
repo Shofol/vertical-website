@@ -1,19 +1,27 @@
 import ShareItem from './ShareItem'
 import { useEffect, useState } from 'react'
 
-const Share = ({ links }) => {
+const Share = () => {
 
-    const [socialLinks, setSocialLinks] = useState(links);
+    const initialLinks = {
+        mail: "mailto:info@example.com?&subject=&cc=&bcc=&body=https://vertrical.com/%0A",
+        twitter: "https://twitter.com/intent/tweet?url=https://vertrical.com/&text=",
+        facebook: "https://www.facebook.com/sharer/sharer.php?u=https://vertrical.com/",
+        linkedIn: "https://www.linkedin.com/shareArticle?mini=true&url=https://vertrical.com/",
+        whatsapp: "https://api.whatsapp.com/send?text=https://vertrical.com/"
+    }
+
+    const [socialLinks, setSocialLinks] = useState(initialLinks);
 
     useEffect(() => {
-        const tempLinks = { ...links };
+        const tempLinks = { ...socialLinks };
         tempLinks.facebook = tempLinks.facebook.replace("https://vertrical.com", window.location.href);
         tempLinks.twitter = tempLinks.twitter.replace("https://vertrical.com", window.location.href);
         tempLinks.linkedIn = tempLinks.linkedIn.replace("https://vertrical.com", window.location.href);
         tempLinks.whatsapp = tempLinks.whatsapp.replace("https://vertrical.com", window.location.href);
         tempLinks.mail = tempLinks.mail.replace("https://vertrical.com", window.location.href);
         setSocialLinks(tempLinks);
-    }, [links])
+    }, [socialLinks])
 
     return (
         <div className="flex flex-col lg:flex-row justify-center items-center mb-12">

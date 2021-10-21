@@ -76,7 +76,7 @@ export default function Cornerstone({ content }) {
                             </ul>}
                         </div>
                         <div className="hidden lg:block">
-                            <Share links={content.fields.socialLinks} />
+                            <Share />
                         </div>
                     </div>
 

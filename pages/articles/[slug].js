@@ -165,7 +165,7 @@ export default function Article({ contents, content }) {
 
                 </div>
                     {content.fields.socialLinks && <div className="block lg:hidden mt-12">
-                        <Share links={content.fields.socialLinks} />
+                        <Share />
                     </div>}
                     <div className="hidden lg:block bg-vert-green-lightest h-40 w-full -mb-40"></div></>}
             </div>
