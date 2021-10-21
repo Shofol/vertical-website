@@ -24,16 +24,16 @@ const Why = () => {
     useEffect(() => {
         setTimeout(() => {
             setShowCloud(showCloud + 1);
-        }, 3500);
+        }, 3200);
         setTimeout(() => {
             setShowLang(showLang + 1);
-        }, 3000);
+        }, 3800);
         setTimeout(() => {
             setSCM(showSCM + 1);
-        }, 4500);
+        }, 4600);
         setTimeout(() => {
             setShowDevOps(showDevOps + 1);
-        }, 4000);
+        }, 4200);
     }, [showCloud, showLang, showSCM, showDevOps]);
 
     const cloudItems = [
