@@ -6,7 +6,7 @@ const BlogCard = ({ article }) => {
     return (
         <div className="rounded-3xl max-w-xs lg:max-w-sm bg-white flex flex-col flex-none mb-6">
             <div className="w-full h-44 relative">
-                {article.fields.coverImage && <img
+                {article.fields.coverImage && article.fields.coverImage.fields && <img
                     src={`https://${article.fields.coverImage.fields.file.url}`}
                     alt='as'
                     className="rounded-tl-3xl rounded-tr-3xl"
