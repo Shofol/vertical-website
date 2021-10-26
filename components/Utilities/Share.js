@@ -21,7 +21,7 @@ const Share = () => {
         tempLinks.whatsapp = tempLinks.whatsapp.replace("https://vertrical.com", window.location.href);
         tempLinks.mail = tempLinks.mail.replace("https://vertrical.com", window.location.href);
         setSocialLinks(tempLinks);
-    }, [socialLinks])
+    }, [])
 
     return (
         <div className="flex flex-col lg:flex-row justify-center items-center mb-12">

@@ -100,11 +100,12 @@ const renderOptions = {
             // render the EMBEDDED_ASSET as you need
             return (
                 <div className="my-16 w-full h-48 lg:h-112 relative">
-                    <Image
+                    <img
                         src={`https://${node.data.target.fields.file.url}`}
                         layout="fill"
-                        objectFit="cover"
-                        objectPosition="center"
+                        style={{ objectFit: 'cover', 'objectPosition': 'center' }}
+                        // objectFit="cover"
+                        // objectPosition="center"
                         alt={node.data.target.fields.description}
                         className="rounded-3xl"
                         quality={100}
